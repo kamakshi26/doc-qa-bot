@@ -3,7 +3,7 @@
 A RAG-powered web app that answers questions from any PDF with cited sources. Upload a document, ask questions in natural language, and get answers grounded exclusively in your document — no hallucinations.
 
 ## Live Demo
-[Add your Streamlit URL here]
+[(https://doc-app-bot-ymcjaelzxkg7wbzw6q8ktz.streamlit.app/)]
 
 ## What it does
 - Upload any text-based PDF
