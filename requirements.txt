@@ -6,5 +6,6 @@ langchain-text-splitters
 langchain-huggingface
 langchain-qdrant
 langchain-ollama
+langchain-openai
 sentence-transformers
 pypdf
