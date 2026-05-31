@@ -8,4 +8,5 @@ langchain-qdrant
 langchain-ollama
 langchain-openai
 sentence-transformers
+torchvision
 pypdf
