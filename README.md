@@ -20,6 +20,10 @@ A RAG-powered web app that answers questions from any PDF with cited sources. Up
 - **PDF parsing** — PyPDF
 
 ## Architecture
+PDF upload → text extraction (PyPDF) → chunking (RecursiveCharacterTextSplitter, 500 chars, 50 overlap)
+→ embedding (MiniLM-L6-v2, 384 dimensions) → storage (Qdrant in-memory)
+→ semantic search (cosine similarity, top-3 chunks) → prompt injection → GPT-4o → cited answer
+
 ## How RAG works here
 1. The uploaded PDF is split into 500-character overlapping chunks
 2. Each chunk is converted into a 384-dimension vector using sentence-transformers
@@ -69,3 +73,11 @@ Upload any IRS publication and ask:
 ```
 
 ## Requirements
+streamlit
+langchain
+langchain-community
+langchain-huggingface
+langchain-openai
+pypdf
+qdrant-client
+sentence-transformers
